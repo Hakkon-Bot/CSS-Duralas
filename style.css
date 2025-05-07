@@ -29,7 +29,7 @@ body {
   position: absolute;
   z-index: 1;
   margin-left: -65px;
-  margin-top: -15px;
+  margin-top: 35px; /* Alignement corrigé ici */
   width: 363px;
   height: 259px;
   background: url(https://i.postimg.cc/T385Dbrs/img-BDY-Photoroom.png);
@@ -117,13 +117,14 @@ body {
   text-align: justify;
   overflow: hidden;
   background-image: url('https://www.transparenttextures.com/patterns/dark-leather.png');
+  background-color: rgba(255,255,255,0.03); /* voile clair */
   background-size: cover;
   background-blend-mode: lighten;
   transition: background 0.3s ease;
 }
 
 .msgBDY:hover {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.08);
 }
 
 .msgBDY p:first-letter {
