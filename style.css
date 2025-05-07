@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'Perigord';
+  src: url('https://tonpseudo.github.io/tonrepo/perigord.woff2') format('woff2'),
+       url('https://tonpseudo.github.io/tonrepo/perigord.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, .BDY {
+  font-family: 'Perigord', serif;
+}
+
+.BDY {
+  margin: auto;
+  width: 500px;
+  text-align: center;
+  line-height: 16px;
+}
+
+.topBDY {
+  width: 500px;
+  height: 10px;
+}
+
+.splashBDY {
+  position: absolute;
+  z-index: 1;
+  margin-left: -65px;
+  margin-top: -15px;
+  width: 363px;
+  height: 259px;
+  background: url(https://i.postimg.cc/T385Dbrs/img-BDY-Photoroom.png);
+}
+
+.cdtBDY {
+  position: absolute;
+  z-index: 3;
+  margin-top: 120px;
+  margin-left: -140px;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  transition: transform ease-in-out 0.55s;
+  -webkit-transition: -webkit-transform ease-in-out 0.55s;
+}
+
+.BDY:hover .cdtBDY {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+}
+
+.ftBDY img {
+  width: 75px;
+  height: 75px;
+  border-radius: 75px;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transition: all ease 1s;
+  -webkit-transition: all ease 1s;
+}
+
+.ftBDY:hover img {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+
+.ftBDY {
+  position: absolute;
+  z-index: 2;
+  margin-top: 120px;
+  margin-left: 40px;
+  width: 75px;
+  height: 75px;
+  border-radius: 75px;
+}
+
+.ftBDY div {
+  position: absolute;
+  margin-top: -75px;
+  width: 75px;
+  height: 62px;
+  padding-top: 13px;
+  border-radius: 75px;
+  font-size: 10px;
+  line-height: 14px;
+  opacity: 0;
+  transition: all linear 1s;
+  -webkit-transition: all linear 1s;
+}
+
+.ftBDY:hover div {
+  opacity: 1;
+}
+
+.tleBDY {
+  margin-bottom: 15px;
+  padding: 15px 0;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.msgBDY {
+  margin: auto;
+  border-left: 10px solid;
+  border-right: 10px solid;
+  width: 460px;
+  min-height: 205px;
+  padding: 10px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: inset 0 0 3px rgba(0,0,0,0.2);
+  font-size: 12px;
+  text-align: justify;
+}
+
+.msgBDY::before {
+  content: '';
+  float: left;
+  width: 100px;
+  height: 85px;
+}
