@@ -27,9 +27,9 @@ body {
 
 .splashBDY {
   position: absolute;
-  z-index: 0; /* corrigé ici */
+  z-index: 1;
   margin-left: -65px;
-  margin-top: 80px;
+  margin-top: 35px; /* Alignement corrigé ici */
   width: 363px;
   height: 259px;
   background: url(https://i.postimg.cc/T385Dbrs/img-BDY-Photoroom.png);
@@ -94,21 +94,13 @@ body {
   opacity: 1;
 }
 
-/* tleBDY visible et stylé */
 .tleBDY {
   font-family: 'Perigord', serif;
   margin-bottom: 15px;
-  padding: 15px;
+  padding: 15px 0;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
   font-size: 18px;
   text-transform: uppercase;
-  background-color: #1a0000;
-  color: #e9d8b7;
-  border: 1px solid #bca77a;
-  border-radius: 6px;
-  box-shadow: inset 0 0 3px #000, 0 0 8px rgba(0, 0, 0, 0.5);
-  text-shadow: 1px 1px 1px #000;
-  position: relative;
-  z-index: 2; /* s’affiche au-dessus de splashBDY */
 }
 
 .msgBDY {
@@ -125,13 +117,14 @@ body {
   text-align: justify;
   overflow: hidden;
   background-image: url('https://www.transparenttextures.com/patterns/dark-leather.png');
-  background-color: rgba(255,255,255,0.03);
+  background-color: rgba(255,255,255,0.03); /* voile clair */
   background-size: cover;
   background-blend-mode: lighten;
+  transition: background 0.3s ease;
 }
 
 .msgBDY:hover {
-  background-color: unset;
+  background-color: rgba(255, 255, 255, 0.08);
 }
 
 .msgBDY p:first-letter {
