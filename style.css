@@ -111,10 +111,26 @@ body {
   width: 460px;
   min-height: 205px;
   padding: 10px;
-  border-radius: 0 0 15px 15px;
+  border-radius: 15px;
   box-shadow: inset 0 0 3px rgba(0,0,0,0.2);
   font-size: 12px;
   text-align: justify;
+  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+  background-size: cover;
+  background-blend-mode: lighten;
+  transition: background 0.3s ease;
+}
+
+.msgBDY:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.msgBDY p:first-letter {
+  float: left;
+  font-size: 24px;
+  line-height: 1;
+  padding-right: 5px;
+  font-family: 'Perigord', serif;
 }
 
 .msgBDY::before {
