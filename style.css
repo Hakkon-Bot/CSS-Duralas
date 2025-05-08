@@ -125,22 +125,16 @@ body {
   color: #f5deb3;
 }
 
+.msgBDY p {
+  padding-left: 40px; /* ← décalage de 40px pour tout paragraphe */
+  margin: 1em 0;
+}
+
 .msgBDY p::first-letter {
   text-transform: uppercase;
   color: #660000;
   font-family: 'Perigord', serif;
-  font-weight: normal;
   font-size: 22px;
-}
-
-/* Décalage invisible des 4 premières lignes */
-.msgBDY p:first-of-type::before {
-  content: "";
-  display: inline-block;
-  width: 40px;
-  height: calc(1em * 1);
-  background: none; /* rouge transparent */
-  outline: none; /* contour visible */
 }
 
 /* === MACHOIRES === */
@@ -183,4 +177,3 @@ body {
     transform: translateY(0);
   }
 }
-
