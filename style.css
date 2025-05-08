@@ -70,11 +70,12 @@ body {
 .ftBDY::before {
   content: "";
   position: absolute;
-  top: -20px;
-  left: -50px;
-  width: 160px;
-  height: 110px;
-  background: url('https://hakkon-bot.github.io/CSS-Duralas/BackBlood1.png') center/auto no-repeat;
+  top: 0;
+  left: 0;
+  width: 183px;
+  height: 122px;
+  background: url('https://hakkon-bot.github.io/CSS-Duralas/BackBlood1.png') left top no-repeat;
+  background-size: auto;
   z-index: -1;
   pointer-events: none;
   opacity: 1;
