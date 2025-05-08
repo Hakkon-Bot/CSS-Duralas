@@ -22,8 +22,8 @@ body {
   line-height: 16px;
   font-family: inherit;
   position: relative;
-  padding-top: 100px;   /* espace pour la mâchoire du haut */
-  padding-bottom: 100px; /* espace pour la mâchoire du bas */
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .topBDY {
@@ -121,7 +121,7 @@ body {
   box-shadow: inset 0 0 3px rgba(0,0,0,0.2);
   font-size: 12px;
   text-align: justify;
-  color: black;
+  color: #f5deb3; /* <-- couleur du texte modifiée ici */
 }
 
 .msgBDY::before {
@@ -141,10 +141,9 @@ body {
 
 /* === MACHOIRES === */
 
-/* Haut */
 .jawTopBDY {
   position: absolute;
-  top: 30px; /* ajuste ici pour descendre ou remonter */
+  top: 30px;
   left: 0;
   width: 100%;
   z-index: 11;
@@ -152,10 +151,9 @@ body {
   animation-delay: 0.2s;
 }
 
-/* Bas */
 .jawBottomBDY {
   position: absolute;
-  bottom: -5px; /* ajuste ici pour monter ou descendre */
+  bottom: -1px;
   left: 0;
   width: 100%;
   z-index: 11;
@@ -163,7 +161,6 @@ body {
   animation-delay: 0.5s;
 }
 
-/* Images des mâchoires */
 .jawTopBDY img,
 .jawBottomBDY img {
   display: block;
@@ -172,7 +169,6 @@ body {
   height: auto;
 }
 
-/* Animation d’apparition */
 @keyframes fadeInJaw {
   from {
     opacity: 0;
@@ -183,4 +179,3 @@ body {
     transform: translateY(0);
   }
 }
-
