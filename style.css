@@ -71,7 +71,7 @@ body {
   content: "";
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 165%;
   width: 363px;
   height: 259px;
   transform: translate(-50%, -50%);
@@ -79,7 +79,7 @@ body {
   background-size: contain;
   z-index: -1;
   pointer-events: none;
-  animation: pulseDecor 3s ease-in-out infinite;
+  animation: pulseDecor 4s ease-in-out infinite;
 }
 
 .ftBDY img {
