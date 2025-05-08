@@ -148,15 +148,15 @@ body {
 }
 
 .jawTopBDY {
-  margin-top: -40px;
+  margin-top: -5px;
   z-index: 11;
-  animation-delay: 0.3s;
+  animation-delay: 2.0s;
 }
 
 .jawBottomBDY {
-  margin-top: -20px;
+  margin-top: -60px;
   z-index: 11;
-  animation-delay: 0.8s;
+  animation-delay: 2.0s;
 }
 
 .jawTopBDY img,
