@@ -99,7 +99,7 @@ body {
 
 .ftBDY div {
   position: absolute;
-  margin-top: -100px;
+  margin-top: -90px;
   width: 75px;
   height: 62px;
   padding-top: 6px;
@@ -168,7 +168,7 @@ body {
 
 .jawBottomBDY {
   position: absolute;
-  bottom: -25px;
+  bottom: -18px;
   left: 0;
   width: 100%;
   z-index: 11;
