@@ -71,7 +71,7 @@ body {
   content: "";
   position: absolute;
   top: 50%;
-  left: 25%;
+  left: 150%;
   width: 363px; /* largeur de l'image */
   height: 259px; /* hauteur de l'image */
   transform: translate(-50%, -50%);
