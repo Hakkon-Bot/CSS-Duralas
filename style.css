@@ -9,6 +9,8 @@
 }
 
 body {
+  background-color: black;
+  color: #e9d8b7;
   font-family: 'Caudex', serif;
 }
 
@@ -17,7 +19,6 @@ body {
   width: 500px;
   text-align: center;
   line-height: 16px;
-  font-family: inherit;
 }
 
 .topBDY {
@@ -35,42 +36,17 @@ body {
   background: url(https://i.postimg.cc/T385Dbrs/img-BDY-Photoroom.png);
 }
 
-.cdtBDY {
-  position: absolute;
-  z-index: 3;
-  margin-top: 120px;
-  margin-left: -140px;
-  transform: scale(0);
-  -webkit-transform: scale(0);
-  transition: transform ease-in-out 0.55s;
-  -webkit-transition: -webkit-transform ease-in-out 0.55s;
-}
-
-.BDY:hover .cdtBDY {
-  transform: scale(1);
-  -webkit-transform: scale(1);
-}
-
-.ftBDY img {
-  width: 75px;
-  height: 75px;
-  border-radius: 75px;
-  transform: rotate(0deg);
-  -webkit-transform: rotate(0deg);
-  transition: all ease 1s;
-  -webkit-transition: all ease 1s;
-}
-
-.ftBDY:hover img {
-  transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-}
-
 .ftBDY {
   position: absolute;
   z-index: 2;
   margin-top: 120px;
   margin-left: 40px;
+  width: 75px;
+  height: 75px;
+  border-radius: 75px;
+}
+
+.ftBDY img {
   width: 75px;
   height: 75px;
   border-radius: 75px;
@@ -85,20 +61,15 @@ body {
   border-radius: 75px;
   font-size: 10px;
   line-height: 14px;
-  opacity: 0;
-  transition: all linear 1s;
-  -webkit-transition: all linear 1s;
-}
-
-.ftBDY:hover div {
-  opacity: 1;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
 }
 
 .tleBDY {
   font-family: 'Perigord', serif;
-  margin-bottom: 15px;
+  margin: 80px auto 15px auto;
   padding: 15px;
-  font-size: 18px;
+  font-size: 22px;
   text-transform: uppercase;
   background-color: #1a0000;
   color: #e9d8b7;
@@ -106,31 +77,25 @@ body {
   border-radius: 6px;
   box-shadow: inset 0 0 3px #000, 0 0 8px rgba(0, 0, 0, 0.5);
   text-shadow: 1px 1px 1px #000;
-  position: relative;
-  z-index: 2;
+  width: fit-content;
 }
 
 .msgBDY {
   font-family: 'Caudex', serif;
   margin: auto;
-  border-left: 10px solid;
-  border-right: 10px solid;
   width: 460px;
   min-height: 205px;
-  padding: 10px;
+  padding: 20px;
   border-radius: 15px;
-  box-shadow: inset 0 0 3px rgba(0,0,0,0.2);
-  font-size: 12px;
-  text-align: justify;
-  overflow: hidden;
+  border-left: 10px solid #660000;
+  border-right: 10px solid #660000;
   background-image: url('https://www.transparenttextures.com/patterns/dark-leather.png');
   background-color: rgba(255,255,255,0.03);
   background-size: cover;
   background-blend-mode: lighten;
-}
-
-.msgBDY:hover {
-  background-color: unset;
+  box-shadow: inset 0 0 3px rgba(0,0,0,0.2);
+  text-align: justify;
+  font-size: 14px;
 }
 
 .msgBDY p:first-letter {
@@ -141,11 +106,4 @@ body {
   font-family: 'Perigord', serif;
   color: #660000;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
-}
-
-.msgBDY::before {
-  content: '';
-  float: left;
-  width: 100px;
-  height: 85px;
 }
