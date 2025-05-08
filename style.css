@@ -66,14 +66,14 @@ body {
   border-radius: 75px;
 }
 
-/* === Image décorative avec effet de pulsation === */
+/* === Image décorative avec effet de pulsation et version responsive === */
 .ftBDY::before {
   content: "";
   position: absolute;
-  top: -35px;
-  left: -35px;
-  width: 145px;
-  height: 145px;
+  top: -100%;
+  left: -150%;
+  width: 300%;
+  height: 300%;
   background: url('https://hakkon-bot.github.io/CSS-Duralas/BackBlood1.png') center/contain no-repeat;
   z-index: -1;
   pointer-events: none;
@@ -170,7 +170,7 @@ body {
 
 .jawTopBDY {
   position: absolute;
-  top: 50px;
+  top: 40px;
   left: 0;
   width: 100%;
   z-index: 11;
@@ -180,7 +180,7 @@ body {
 
 .jawBottomBDY {
   position: absolute;
-  bottom: -20px;
+  bottom: 20px;
   left: 0;
   width: 100%;
   z-index: 11;
