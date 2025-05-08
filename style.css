@@ -126,7 +126,7 @@ body {
 }
 
 .msgBDY p {
-  padding-left: 40px; /* ← décalage de 40px pour tout paragraphe */
+  text-indent: 40px; /* ← décalage uniquement de la première ligne */
   margin: 1em 0;
 }
 
