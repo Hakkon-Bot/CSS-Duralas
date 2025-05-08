@@ -128,7 +128,9 @@ body {
   content: '';
   float: left;
   width: 100px;
-  height: 45px;
+  height: 65px;
+  background: rgba(255, 0, 0, 0.3); /* rouge translucide */
+  border: 1px dashed red;
 }
 
 .msgBDY p::first-letter {
