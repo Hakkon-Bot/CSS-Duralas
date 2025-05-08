@@ -155,7 +155,7 @@ body {
 /* Bas */
 .jawBottomBDY {
   position: absolute;
-  bottom: 20px; /* ajuste ici pour monter ou descendre */
+  bottom: -5px; /* ajuste ici pour monter ou descendre */
   left: 0;
   width: 100%;
   z-index: 11;
