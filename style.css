@@ -110,8 +110,6 @@ body {
 .msgBDY {
   font-family: 'Caudex', serif;
   margin: auto;
-  border-left: 10px solid;
-  border-right: 10px solid;
   width: 460px;
   min-height: 205px;
   padding: 10px;
