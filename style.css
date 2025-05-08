@@ -70,18 +70,17 @@ body {
 .ftBDY::before {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
   width: 183px;
   height: 122px;
-  transform: translate(-50%, -50%);
-  background: url('https://hakkon-bot.github.io/CSS-Duralas/BackBlood1.png') center center no-repeat;
+  background: url('https://hakkon-bot.github.io/CSS-Duralas/BackBlood1.png') top left no-repeat;
   background-size: auto;
   z-index: -1;
   pointer-events: none;
   opacity: 1;
   animation: pulseAura 4s ease-in-out infinite;
-}
+  }
 
 /* Animation de pulsation lente */
 @keyframes pulseAura {
