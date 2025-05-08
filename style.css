@@ -123,3 +123,12 @@ body {
   width: 100px;
   height: 85px;
 }
+
+/* ===== AJOUT POUR PREMIERE LETTRE DES PARAGRAPHES ===== */
+.msgBDY p::first-letter {
+  text-transform: uppercase;
+  color: #660000;
+  font-family: 'Perigord', serif;
+  font-weight: normal;
+  font-size: 120%;
+}
