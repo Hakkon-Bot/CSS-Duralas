@@ -99,10 +99,11 @@ body {
 
 .ftBDY div {
   position: absolute;
-  margin-top: -75px;
+  margin-top: -80px;
   width: 75px;
   height: 62px;
-  padding-top: 13px;
+  padding-top: 6px;
+  text-align: center;
   border-radius: 75px;
   font-size: 10px;
   line-height: 14px;
