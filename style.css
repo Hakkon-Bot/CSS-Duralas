@@ -40,6 +40,15 @@ body {
   height: 259px;
 }
 
+/* IMAGE FIXE DERRIÈRE L’ICÔNE */
+.bgBehindFT {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
 .cdtBDY {
   position: absolute;
   z-index: 3;
@@ -126,7 +135,7 @@ body {
 }
 
 .msgBDY p {
-  text-indent: 40px; /* ← décalage uniquement de la première ligne */
+  text-indent: 35px;
   margin: 1em 0;
 }
 
@@ -177,3 +186,4 @@ body {
     transform: translateY(0);
   }
 }
+
