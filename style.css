@@ -66,6 +66,21 @@ body {
   border-radius: 75px;
 }
 
+/* === Image de fond décorative derrière ftBDY === */
+.ftBDY::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 95px;
+  height: 95px;
+  background: url('https://hakkon-bot.github.io/CSS-Duralas/BackBlood1.png') center/cover no-repeat;
+  z-index: -1;
+  border-radius: 100%;
+  pointer-events: none;
+  opacity: 1;
+}
+
 .ftBDY img {
   width: 75px;
   height: 75px;
@@ -121,7 +136,7 @@ body {
   box-shadow: inset 0 0 3px rgba(0,0,0,0.2);
   font-size: 12px;
   text-align: justify;
-  color: #f5deb3; /* <-- couleur du texte modifiée ici */
+  color: #f5deb3;
 }
 
 .msgBDY::before {
@@ -143,7 +158,7 @@ body {
 
 .jawTopBDY {
   position: absolute;
-  top: 30px;
+  top: 20px;
   left: 0;
   width: 100%;
   z-index: 11;
@@ -153,7 +168,7 @@ body {
 
 .jawBottomBDY {
   position: absolute;
-  bottom: -1px;
+  bottom: 10px;
   left: 0;
   width: 100%;
   z-index: 11;
