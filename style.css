@@ -10,13 +10,9 @@
 
 body {
   font-family: 'Caudex', serif;
-  background: #000;
-  margin: 0;
-  padding: 0;
 }
 
 .BDY {
-  position: relative;
   margin: auto;
   width: 500px;
   text-align: center;
@@ -29,30 +25,14 @@ body {
   height: 10px;
 }
 
-/* MACHOIRE HAUTE */
-.upperJaw {
+.splashBDY {
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  height: 150px;
-  background: url('https://hakkon-bot.github.io/CSS-Duralas/UpDent.png') no-repeat center top;
-  background-size: contain;
-  z-index: 0;
-}
-
-/* MACHOIRE BASSE */
-.lowerJaw {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  height: 150px;
-  background: url('https://hakkon-bot.github.io/CSS-Duralas/DownDent.png') no-repeat center bottom;
-  background-size: contain;
-  z-index: 0;
+  z-index: 1;
+  margin-left: -65px;
+  margin-top: -15px;
+  width: 363px;
+  height: 259px;
+  background: url(https://i.postimg.cc/T385Dbrs/img-BDY-Photoroom.png);
 }
 
 .cdtBDY {
@@ -124,14 +104,13 @@ body {
 }
 
 .msgBDY {
-  position: relative;
-  z-index: 2;
+  font-family: 'Caudex', serif;
   margin: auto;
   border-left: 10px solid;
   border-right: 10px solid;
   width: 460px;
   min-height: 205px;
-  padding: 160px 10px; /* espace haut et bas pour les mâchoires */
+  padding: 10px;
   border-radius: 0 0 15px 15px;
   box-shadow: inset 0 0 3px rgba(0,0,0,0.2);
   font-size: 12px;
@@ -145,7 +124,7 @@ body {
   height: 85px;
 }
 
-/* Première lettre des paragraphes */
+/* ===== PREMIÈRE LETTRE DES PARAGRAPHES ===== */
 .msgBDY p::first-letter {
   text-transform: uppercase;
   color: #660000;
