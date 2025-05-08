@@ -138,14 +138,16 @@ body {
   content: "";
   display: inline-block;
   width: 60px;
-  height: calc(1em * 1);
+  height: calc(1em * 4);
+  background: rgba(255, 0, 0, 0.3); /* rouge transparent */
+  outline: 1px dashed red;          /* contour visible */
 }
 
 /* === MACHOIRES === */
 
 .jawTopBDY {
   position: absolute;
-  top: 90px;
+  top: 100px;
   left: 0;
   width: 100%;
   z-index: 11;
