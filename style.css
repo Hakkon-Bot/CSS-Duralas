@@ -32,7 +32,7 @@ body {
   margin-top: -15px;
   width: 363px;
   height: 259px;
-  background: url(https://i.postimg.cc/T385Dbrs/img-BDY-Photoroom.png);
+  /* background removed */
 }
 
 .cdtBDY {
@@ -88,6 +88,8 @@ body {
   opacity: 0;
   transition: all linear 1s;
   -webkit-transition: all linear 1s;
+  background: rgba(0, 0, 0, 0.4); /* KEEP THIS */
+  color: white;
 }
 
 .ftBDY:hover div {
@@ -101,6 +103,8 @@ body {
   text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
   font-size: 18px;
   text-transform: uppercase;
+  /* background removed */
+  /* color can stay if needed */
 }
 
 .msgBDY {
@@ -115,6 +119,7 @@ body {
   box-shadow: inset 0 0 3px rgba(0,0,0,0.2);
   font-size: 12px;
   text-align: justify;
+  /* background removed */
 }
 
 .msgBDY::before {
