@@ -137,17 +137,17 @@ body {
 .msgBDY p:first-of-type::before {
   content: "";
   display: inline-block;
-  width: 60px;
-  height: calc(1em * 4);
-  background: rgba(255, 0, 0, 0.3); /* rouge transparent */
-  outline: 1px dashed red;          /* contour visible */
+  width: 40px;
+  height: calc(1em * 1);
+  background: none; /* rouge transparent */
+  outline: none; /* contour visible */
 }
 
 /* === MACHOIRES === */
 
 .jawTopBDY {
   position: absolute;
-  top: 100px;
+  top: 95px;
   left: 0;
   width: 100%;
   z-index: 11;
