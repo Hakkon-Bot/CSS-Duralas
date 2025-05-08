@@ -59,7 +59,7 @@ body {
 .ftBDY {
   position: absolute;
   z-index: 2;
-  margin-top: 20px;
+  margin-top: -60px;
   margin-left: 40px;
   width: 75px;
   height: 75px;
@@ -142,8 +142,8 @@ body {
 }
 
 .msgBDY p {
-  text-indent: 35px;
-  margin: 0.5em 0;
+  text-indent: 30px;
+  margin: 0.2em 0;
 }
 
 .msgBDY p::first-letter {
