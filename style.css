@@ -157,7 +157,7 @@ body {
 
 .jawTopBDY {
   position: absolute;
-  top: 1px;
+  top: -30px;
   left: 0;
   width: 100%;
   z-index: 11;
