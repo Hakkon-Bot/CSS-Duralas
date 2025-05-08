@@ -31,20 +31,22 @@ body {
   height: 10px;
 }
 
+/* Zone contenant l’icône + image arrière-plan */
 .splashBDY {
-  position: absolute;
+  position: relative;
   z-index: 1;
-  margin-left: -65px;
-  margin-top: -15px;
   width: 363px;
   height: 259px;
+  margin-left: -65px;
+  margin-top: -15px;
 }
 
-/* IMAGE FIXE DERRIÈRE L’ICÔNE */
+/* IMAGE FIXE CENTRÉE DERRIÈRE .ftBDY */
 .bgBehindFT {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 0;
   pointer-events: none;
 }
@@ -186,4 +188,3 @@ body {
     transform: translateY(0);
   }
 }
-
