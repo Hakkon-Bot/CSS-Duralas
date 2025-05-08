@@ -103,7 +103,8 @@ body {
 
 .tleBDY {
   font-family: 'Perigord', serif;
-  margin-bottom: px;
+  margin-top: 40px;
+  margin-bottom: 10px;
   padding: 15px 0;
   text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
   font-size: 18px;
@@ -129,7 +130,7 @@ body {
   float: left;
   width: 100px;
   height: 65px;
-  background: rgba(255, 0, 0, 0.3); /* rouge translucide */
+  background: rgba(255, 0, 0, 0.3);
   border: 1px dashed red;
 }
 
@@ -139,6 +140,14 @@ body {
   font-family: 'Perigord', serif;
   font-weight: normal;
   font-size: 22px;
+}
+
+/* Décalage invisible des 4 premières lignes */
+.msgBDY p:first-of-type::before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: calc(1em * 4);
 }
 
 /* === MACHOIRES === */
@@ -181,3 +190,4 @@ body {
     transform: translateY(0);
   }
 }
+
