@@ -12,6 +12,8 @@ body {
   background-color: black;
   color: #e9d8b7;
   font-family: 'Caudex', serif;
+  margin: 0;
+  padding: 0;
 }
 
 .BDY {
@@ -19,6 +21,9 @@ body {
   width: 500px;
   text-align: center;
   line-height: 16px;
+  position: relative;
+  border-left: 10px solid #660000;
+  border-right: 10px solid #660000;
 }
 
 .topBDY {
@@ -30,10 +35,12 @@ body {
   position: absolute;
   z-index: 0;
   margin-left: -65px;
-  margin-top: 80px;
+  margin-top: -15px;
   width: 363px;
   height: 259px;
   background: url(https://i.postimg.cc/T385Dbrs/img-BDY-Photoroom.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .ftBDY {
@@ -67,7 +74,7 @@ body {
 
 .tleBDY {
   font-family: 'Perigord', serif;
-  margin: 80px auto 15px auto;
+  margin: 20px auto 15px auto;
   padding: 15px;
   font-size: 22px;
   text-transform: uppercase;
@@ -87,8 +94,6 @@ body {
   min-height: 205px;
   padding: 20px;
   border-radius: 15px;
-  border-left: 10px solid #660000;
-  border-right: 10px solid #660000;
   background-image: url('https://www.transparenttextures.com/patterns/dark-leather.png');
   background-color: rgba(255,255,255,0.03);
   background-size: cover;
@@ -107,4 +112,3 @@ body {
   color: #660000;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
-
