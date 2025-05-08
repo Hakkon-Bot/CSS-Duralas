@@ -66,19 +66,20 @@ body {
   border-radius: 75px;
 }
 
-/* Image de fond décorative derrière l'icône */
+/* Image décorative derrière l'icône */
 .ftBDY::before {
   content: "";
   position: absolute;
   top: 50%;
-  left: 150%;
-  width: 363px; /* largeur de l'image */
-  height: 259px; /* hauteur de l'image */
+  left: 50%;
+  width: 363px;
+  height: 259px;
   transform: translate(-50%, -50%);
   background: url('https://hakkon-bot.github.io/CSS-Duralas/BackBlood1.png') no-repeat center center;
   background-size: contain;
   z-index: -1;
   pointer-events: none;
+  animation: pulseDecor 3s ease-in-out infinite;
 }
 
 .ftBDY img {
@@ -152,7 +153,7 @@ body {
   font-size: 22px;
 }
 
-/* === MACHOIRES === */
+/* MACHOIRES */
 
 .jawTopBDY {
   position: absolute;
@@ -190,5 +191,21 @@ body {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Animation de pulsation douce */
+@keyframes pulseDecor {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.9;
   }
 }
